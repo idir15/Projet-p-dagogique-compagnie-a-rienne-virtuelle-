@@ -1,0 +1,259 @@
+
+
+.container_destinations{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 855px;
+    background: linear-gradient(180deg, #ffffff, #f7f7f7);    
+    padding: 22px 0px;
+    
+
+}
+
+.destinations__ligne1{
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    justify-content: space-between;
+    box-shadow: 0 -4px 18px 0 rgba(0,0,0,0.5);
+
+
+    
+    
+}
+
+.ligne1__column1{
+    width: 33%;
+    height: 450px;
+    background-image: url('../images/paris2.jpg');
+    
+}
+.ligne1__column2{
+   
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    justify-content: space-between;
+}
+.ligne1__column3{
+    
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    justify-content: space-between;
+}
+
+.column2__ligne1{
+   height: 222px;
+   width: 100%;
+   background-image: url('../images/london.jpg');
+  
+
+}
+
+.column2__ligne2{
+    height: 222px;
+    width: 100%;
+    background-image: url('../images/roma.jpg');
+    
+
+}
+.column3__ligne1{
+    height: 250px;
+    width: 100%;
+    background-image: url('../images/ny.jpg');
+    
+ 
+ }
+ 
+ .column3__ligne2{
+     height: 194px;
+     width: 100%;
+     background-image: url('../images/guell-parce-barcelone.1545490.w630.jpg');
+   
+ }
+
+ .destinations__ligne2{
+     display: flex;
+     flex-direction: row;
+     width: 1100px;
+     justify-content: space-between;
+     box-shadow: 0 4px 18px 0 rgba(0,0,0,0.5);
+    }
+    
+    
+     
+
+ 
+
+
+ .ligne2__column1{
+
+    background-image: url('../images/moscow.jpg');
+ }
+.ligne2__column2{
+    background-image: url('../images/berlin.jpg');
+ }
+ .ligne2__column3{
+    background-image: url('../images/venis.jpg');
+ } 
+ 
+ .ligne2__column1,.ligne2__column2,.ligne2__column3{
+    width: 33%;
+   height: 400px;
+   background-size: cover;
+   
+    position: relative;
+    overflow:hidden ;
+ 
+
+ }
+ .ligne1__column1, .column2__ligne1, .column2__ligne2,.column3__ligne1,.column3__ligne2{
+    background-size: cover;
+   
+    position: relative;
+    overflow:hidden ;
+    background-position: center;
+ }
+
+ .destination__info{
+    background: linear-gradient(to bottom right, #f64c72, #ffffff99 );
+    color: white;
+    text-shadow: 0.5px 0.5px 11px #000;
+     height: 100px;
+     width: 100%;
+     position: absolute;
+     bottom: -100%;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -ms-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+ }
+ .destination__info--show{
+     bottom: 0;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -ms-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+ }
+ .destination__ville{
+     font-weight: bold;
+     font-size: 22px;
+     padding: 0px 10px;   
+ }
+ .destination__texte{
+    
+    
+    font-size: 17px;
+    padding: 0px 15px;
+}
+.destination__prix{
+    font-weight: bold;
+    font-size: 21px;
+    margin-left: 30px;
+
+}
+.destination__btn{
+    align-self: flex-end;
+    font-size: 16px;
+    padding: 6px 18px;
+        background: #3581d2;
+    text-shadow: none;
+    position: absolute;
+    right: 10px;
+    color: white;
+    transition: transform .2s;
+       box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+
+.destination__btn:hover{
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+
+.info__ligne3{
+    display: flex;
+    justify-content: space-between;;
+}
+
+.info__ligne3>a{
+    cursor: pointer;
+}
+
+.container__text__dest{
+    color: #14238c;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+
+    
+    padding: 20px 0px 70px 40px;
+}
+.text__dest__txt1{
+    font-size: 30px;
+    font-weight: bold;
+  margin-bottom: 10px;
+}
+.text__dest__txt2{
+    font-size: 21px;
+    font-weight: 200;
+  }
+@media only screen and (max-width: 1120px ) {
+    .container_destinations {
+
+        height:   840px;
+    }
+        
+        .destinations__ligne1 {
+           
+            width: 99%;
+            
+        }
+        .destinations__ligne2 {
+           
+            width: 99%;
+       
+        }
+        
+        .ligne2__column1, .ligne2__column2, .ligne2__column3 {
+            
+            height: 384px;
+        
+        }
+}
+
+@media only screen and (max-width: 760px) {
+    .container__text__dest {
+
+        padding: 20px 17px;
+    }
+    .container_destinations {
+
+        height:   912px;
+    }
+        
+    .destinations__ligne1{
+     flex-direction: column;
+     align-items: center;
+     
+    }
+   
+    .ligne1__column1,.ligne1__column2,.ligne1__column3{
+    width:100%;
+    
+    }
+    .ligne1__column1,.column2__ligne1,.column2__ligne2{
+        margin: 3px 0px;
+    }
+    .ligne1__column3,.ligne2__column1,.ligne2__column2,.ligne2__column3{
+        display: none;
+    }
+ }
+
+

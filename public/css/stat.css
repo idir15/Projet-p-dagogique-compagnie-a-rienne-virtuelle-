@@ -1,0 +1,486 @@
+
+
+@font-face {
+    font-family: 'MontserratAlternates-Medium';
+    src: url('fonts/MontserratAlternates-Medium.eot?#iefix') format('embedded-opentype'),  url('fonts/MontserratAlternates-Medium.otf')  format('opentype'),
+         url('fonts/MontserratAlternates-Medium.woff') format('woff'), url('fonts/MontserratAlternates-Medium.ttf')  format('truetype'), url('fonts/MontserratAlternates-Medium.svg#MontserratAlternates-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+body{
+    font-family: 'MontserratAlternates-Medium';
+    background-color: #f5f5f0;
+    line-height: 1.7;
+    margin: 0;
+
+    
+}
+.information__background{
+    position: absolute;
+    z-index: -1;
+    width: 600px;
+    height: 600px;
+    opacity: 0.1;
+    bottom: 0;
+    right: 0;
+    background-image: url('../images/shapes.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}  
+.information__photo_cam{
+    visibility: hidden;
+width: 100%;
+height: auto;
+}  
+
+.information__top__photo{
+    width:100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.background__information{
+    background-image: url('../images/aeroport.jpg');
+}
+.background__animaux{
+    background-image: url('../images/animauxx.grand.jpg');
+}
+.background__classe{
+    background-image: url('../images/fist-class.jpg');
+}
+.background__famille{
+    background-image: url('../images/famille.grand.jpg');
+}
+.background__preparer{
+    background-image: url('../images/preparer-voyage.jpg');
+}
+.background__vision{
+    background-image: url('../images/personnel.png');
+}
+.background__bagage{
+    background-image: url('../images/aeroport-valise.jpg');
+}
+.animaux{
+    background-image: url('../images/animaux.redim.jpg') ;
+}
+.bagage{
+    background-image: url('../images/valise.redim.png') ;
+
+}
+.classe{
+    background-image: url('../images/class.redim11.jpg') ;
+}
+.famille{
+    background-image: url('../images/famille.redim.jpg') ;
+
+}
+.preparer{
+    background-image: url('../images/prep.redim1.jpg') ;
+
+}
+.information__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     position: relative;
+   
+}
+.information__content{
+    width: 1000px;
+    justify-content: flex-start;
+    
+     padding: 40px 0px;
+}
+.information__titre{
+    font-size: 28px;
+    font-weight: bold;
+    color: #3081d2;
+}
+
+.cartes__titre{
+    font-size: 28px;
+    padding: 100px 0px 10px 0px;
+    color: #3081d2;
+}
+.list__titre{
+    font-size: 26px;
+    padding: 40px 0px 0px 0px;
+    color: #3081d2;
+}
+.information__cartes{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.information__carte{
+    width:310px;
+    background: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+    margin: 10px;
+    text-decoration: none;
+    color: #003145;
+    transition: 0.3s;
+ 
+}
+.information__carte:hover{
+    transform:scale(1.05);
+}
+.carte__photo{
+    width: 100%;
+    height: 150px;
+    
+}
+.carte__content{
+    padding: 15px;
+    display: flex;
+    height: 220px;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+
+}
+
+.carte__content__vision{
+    padding: 15px;
+    display: flex;
+    height: 350px;
+    flex-direction: column;
+    justify-content: space-around;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+}
+.carte__content__vision:hover{
+    transform: scale(1.02);
+}
+
+
+
+.carte__titre {
+    font-size: 25px;
+    
+    color: #3081d2;
+}
+
+.carte__texte{
+    font-size: 13px;
+}
+.carte__plus{
+    font-size: 19px;
+   
+    color: #3081d2;
+    align-self: flex-end;
+    padding: 10px 0px;
+}
+
+.information__list{
+    display: flex;
+    flex-direction: column;
+}
+.information__element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0px;
+    
+}
+.element__titre{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 880px;
+    height: 50px;
+    background: white;
+    position:relative ;
+    border: 2px solid #3081d2;
+    font-weight: bold;
+    padding: 0px 10px;
+    user-select: none;
+    cursor: pointer;
+    
+}
+.element__btn{
+  
+    background-image: url(../icons/toggle.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    margin-left: auto;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
+}
+.element__btn--rotate{
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
+
+}
+.element__content{
+    width: 900px;
+    max-height: 450px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+    overflow: hidden;
+    -webkit-transition: max-height 0.5s ease;
+    -moz-transition: max-height 0.5s ease;
+    -ms-transition: max-height 0.5s ease;
+    -o-transition: max-height 0.5s ease;
+    transition: max-height 0.8s ease;
+}
+
+.content__texte{
+    padding: 10px 30px;
+    
+}
+
+.content__texte>ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #f64e74; /* Change the color */
+    font-weight: bolder; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+  .content__texte>ul li{
+      list-style: none;
+  }
+.element__content--hide{
+   
+    max-height: 0px;
+    -webkit-transition: max-height 0.5s ease;
+    -moz-transition: max-height 0.5s ease;
+    -ms-transition: max-height 0.5s ease;
+    -o-transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease;
+}
+
+.element__lien{
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 40px;
+
+}
+.element__icon1{
+    background-image: url('../icons/flight-ticket.svg');
+}
+.element__icon2{
+    background-image: url('../icons/passport-card.svg');
+}
+.element__icon3{
+    background-image: url('../icons/boarding-ticket.svg');
+}
+.element__icon4{
+    background-image: url('../icons/airport.svg');
+}
+.element__icon5{
+    background-image: url('../icons/boarding-ticket.svg');
+}
+.element__icon6{
+    background-image: url('../icons/label.svg');
+}
+.element__icon7{
+    background-image: url('../icons/luggage.svg');
+}
+.element__icon8{
+    background-image: url('../icons/control.svg');
+}
+.element__icon9{
+    background-image: url('../icons/decolage.svg');
+}
+.element__icon10{
+    background-image: url('../icons/change.svg');
+}
+.element__icon11{
+    background-image: url('../icons/luggage.svg');
+}
+.element__icon12{
+    background-image: url('../icons/sunbed.svg');
+}
+.element__icon13{
+    background-image: url('../icons/teenager.svg');
+}
+.element__icon14{
+    background-image: url('../icons/kids.svg');
+}
+.element__icon15{
+    background-image: url('../icons/pregnant.svg');
+}
+.element__icon16{
+    background-image: url('../icons/baby.svg');
+}
+.element__icon17{
+    background-image: url('../icons/cat.svg');
+}
+.element__icon18{
+    background-image: url('../icons/cage.svg');
+}
+.element__icon19{
+    background-image: url('../icons/article.svg');
+}
+.element__icon20{
+    background-image: url('../icons/main.png');
+}
+.element__icon21{
+    background-image: url('../icons/soute.png');
+}
+.element__icon22{
+    background-image: url('../icons/shampoo.svg');
+}
+.element__icon23{
+    background-image: url('../icons/rifle.svg');
+}
+.element__icon24{
+    background-image: url('../icons/flasks.svg');
+}
+.element__icon25{
+    background-image: url('../icons/souteNOK.png');
+}
+.element__icon26{
+    background-image: url('../icons/souteOK.png');
+}
+.element__icon27{
+    background-image: url('../icons/air-hostess.svg');
+}
+.element__icon28{
+    background-image: url('../icons/magazine.svg');
+}
+.element__icon29{
+    background-image: url('../icons/hot-soup-bowl.svg');
+}
+.element__icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+.link__arrow{
+    background-image: url(../icons/play-arrow.svg);
+
+    padding: 8px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: contain;
+    margin: 4px;
+}
+
+.element__lien:hover{
+    color:  #f64c72;
+}
+.information__text{
+    padding: 0px 10px;
+}
+@media only screen and (max-width: 1000px ) {
+    .information__content{
+        width: 100%;
+     
+    }
+    .element__titre {
+       
+        width: 92%;
+    }
+
+    .element__content{
+        width: 96%;
+        max-height: 1000px;
+    }
+
+
+    .element__content--hide {
+          max-height: 0;
+    }
+
+}
+@media only screen and (max-width: 1000px ) {
+    .element__content{
+        width: 99%;
+    }
+
+}
+.separation {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: auto;
+    background-image: url('icons/wave5.svg');
+    background-size: cover;
+}
+.separation>img{
+    visibility: hidden;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.carte__content--valeur{
+    height: 170px;
+}
+.carte__photo--obj{
+    background-image: url('../images/object.jpg');
+
+}
+.carte__photo--prio{
+    background-image: url('../images/prio.png');
+
+}
+.carte__photo--val{
+    background-image: url('../images/val.png');
+
+}
+
+
+.background__flotte{
+    background-image: url('../images/cc.jpg');
+}
+.rapide{
+    background-image: url('../images/rapide.jpg');
+}
+.lowcost{
+    background-image: url('../images/lowcost.jpg');
+}
+.économe{
+    background-image: url('../images/économe.jpg');
+}
+.information__avions_text{
+    font-size: 20px;
+    font-weight: 700;
+    color: #010420;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.element__icon_plane{
+    background-image: url('../images/plane-up.svg');
+}

@@ -1,0 +1,20 @@
+{
+    "name": "hichem/php-lang",
+    "authors": [
+        {
+            "name": "ProjetCPI",
+            "email": "57575684+ProjetCPI@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "mailgun/mailgun-php": "^3.0",
+        "phpmailer/phpmailer": "^6.1",
+    },
+    
+    "autoload": {
+        "psr-4": {
+            "Mail\\": "mail/"
+        }
+    }
+    
+}

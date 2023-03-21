@@ -1,0 +1,600 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+.resultats-vols__dates{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 800px;
+    height: 100px;
+    align-items: flex-end;        
+}
+.resultats-vols__date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width:130px ;
+    
+    border-radius: 4px;
+}
+.resultats-vols__date--actif{
+   align-self: center;
+   background: white;
+}
+.resultats-vols__boutton{
+width: 30px;
+height: 30px;
+border-radius: 43px;
+background: white;
+align-self: center;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.resultats-vols{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+justify-content: center;
+background: #f6f6f6;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+    
+}
+.resultats-vols__titre{
+    font-size: 18px;
+}
+.resultats-vols__vol{
+display: flex;
+height: 150px;
+padding: 0px 10px;
+justify-content: space-between;
+width: 650px;
+align-items: center;
+border-radius: 6px;
+background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.33);
+    margin: 10px 0px 20px 0px;
+}
+
+.resultats-vols__temps{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+font-size: 25px;
+width:350px;
+}
+
+@media only screen and (max-width: 768px ) {
+
+
+.resultats-vols__vol {
+   
+    height: 240px;
+    padding: 0px 10px;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 90%;
+}
+
+.resultats-vols__droite{
+    
+    display: flex;
+    flex-direction: column;
+    height: 108px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.resultats-vols__temps{
+    flex-direction: column;
+    align-items: center;
+    
+}
+.resultats-vols__separation{
+    display: none;
+}
+}
+.resultats-vols__separation{
+height: 2px;
+background: black;
+width:50px;
+}
+.resultats-vols__companie{
+font-size:  16px;
+}
+.resultats-vols__informations{
+text-decoration:underline;
+font-weight: bold;
+color: #f64c72;
+cursor: pointer;
+}
+
+.resultats-vols__ticket-prix{
+
+height: 60px;
+width: 220px;
+padding: 0px 5px;
+background: #3081d2;
+border-radius: 5px;
+display: flex;
+flex-direction: row;
+color:white;
+justify-content: space-between;
+align-items: center;
+padding: 5px 10px;
+
+}
+.resultats-vols__classe{
+font-size: 17px;
+
+}
+
+.resultats-vols__gauche{
+display: flex ;
+position: relative;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.resultats-vols__prix{
+font-size: 22px;
+font-weight: bold;
+}
+.resultat-vols__plus-bas{
+background: #f64c72;
+position: absolute;
+top: -9px;
+width: 100px;
+text-align: center;
+border-radius: 4px;
+color: white;
+font-weight: bold;
+font-size: 13px;
+padding: 2px 0px;
+}
+.container_reservation{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.entete{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #0088a9;
+    color: #fff;
+    position: fixed;
+    z-index: 2;
+}
+
+.entete__cadre{
+    height: 60px;
+}
+.information_reservation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+   
+    height: 500px;
+
+   
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+    padding:0px 40px 40px 40px; 
+    width:440px;
+    margin: 22Px;
+}
+#continuerButtonRose{
+    font-size:20px;
+    color:white;
+    background-color:#f64c72;
+    border:none;
+    border-radius:8px;
+    height: 50px;
+    width: 135px;
+}
+
+
+.information_reservation__ligne{
+    width:90%;
+    position: relative;
+    height: 60px;  
+    overflow: hidden;
+    
+}
+.information_reservation__ligne input{
+    width:100%;
+    height: 100%;
+    padding-top: 7px;
+    border: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+   
+   
+    
+}
+.information_reservation__ligne label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+    bottom:0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+   pointer-events: none;
+   border-bottom: 1px solid black;
+   
+}
+
+.information_reservation__ligne label::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #0088a9;
+    transform:translateX(-100%);
+    transition:transform 0.3s ease;
+}
+.information_reservation__contenue {
+    position: absolute;
+    bottom:10px;
+    left:0px;
+    transition: all 0.3s ease;
+}
+.information_reservation__ligne input:focus + .information_reservation__label .information_reservation__contenue,
+.information_reservation__ligne input:valid + .information_reservation__label .information_reservation__contenue{
+    transform: translateY(-100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#0088a9;
+}
+.information_reservation__ligne input:focus + .information_reservation__label::after,
+.information_reservation__ligne input:valid + .information_reservation__label::after {
+    transform: translate(0%);
+}
+
+.information_reservation__titre{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: #0088a9;
+   
+}
+
+.information_reservation__radio_groupe{
+    margin-top:20px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.civ{
+    font-weight: 500;
+}
+
+
+.information_reservation__radio{
+
+font-weight: 400;
+text-transform: capitalize;
+display: inline-block;
+vertical-align: middle;
+color:black;
+position: relative;
+padding-left: 25px;
+cursor: pointer;
+
+}
+
+.information_reservation__radio input[type="radio"]{
+display: none;
+}
+.information_reservation__radio span{
+height: 14px;
+width: 14px;
+border-radius: 50%;
+border: 2px solid #0088a9;
+display: block;
+position: absolute;
+left:0;
+top:3px;
+}
+.information_reservation__radio span:after{
+content: "";
+height: 7px;
+width:7px;
+background: #0088a9;
+display: block;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%) scale(0);
+border-radius: 50%;
+transition: 0.1s ease-in-out 0s;
+}
+.information_reservation__radio input[type="radio"]:checked ~ span:after{
+transform: translate(-50%,-50%) scale(1);
+}
+.information_reservation__confirmer{
+display: flex;
+width: 900px;
+justify-content: flex-end;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 15px;
+
+}
+.information_reservation__btn_confirmer{
+padding: 15px;
+border:1px solid #0088a9;
+border-radius: 3px;
+background-color:#0088a9 ;
+color: white;
+cursor: pointer;
+width: 150px;
+font-size: 18px;
+transition: 0.3s;
+
+}
+.information_reservation__btn_confirmer:hover{
+
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+
+/*enregistremeht*/
+
+
+.container_enregistrement{
+    display: flex;
+    flex-direction: row;
+}
+.enregistrement_gauche{
+width: 60%;
+height: 550px;
+background: white;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.enregistrement_droite{
+    width: 40%;
+    height: 550px;
+    background-image: url('images/london.jpg');
+    background-repeat: no-repeat;
+    background-position-x: -275px;
+    background-size: cover;
+
+}
+
+.enregistrement_droite::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 60%;
+    border-width: 100vh 150px 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent;
+}
+
+.form_enregistrement{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+    padding: 0px 40px 40px 40px;
+    height: 254px;
+}
+
+.enregistrement__btn{
+    padding: 15px;
+    margin-top: 27px;
+    border: 1px solid #0088a9;
+    border-radius: 3px;
+    background-color: #0088a9;
+    color: white;
+    cursor: pointer;
+    width: 150px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+
+
+/*enregistrement 1*/
+.enregistrmrnt__tete{
+    justify-self: start;
+}
+.enregistrement__etat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.enregistrement__cercle{
+    width:60px;
+    height: 60px;
+    border-radius: 55px;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+.enregistrement__cercle--actif{
+    background: #00a1de;
+
+}
+.enregistrement__ligne{
+    width: 70px;
+    height: 5px;
+    background: grey;
+}
+
+.enregistrement__titre{
+    font-size: 25px;
+    font-weight: 700;
+    color:#00a1de ;
+}
+
+.enregistrement__tableau{
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+.tableau__titres,.tableau__ligne{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #00a1de;
+}
+
+.tableau__titre,.tableau__element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    width: 250px;
+    height: 50px;
+
+}
+
+.tableau__ligne{
+    background: #f1f1f1;
+}
+.tableau__ligne--pair{
+    background: rgb(211, 205, 205);;
+    
+}
+
+.tableau__element{
+    font-size: 19px;
+}
+
+.tableau__button{
+   padding: 8px 15px;
+   border-radius: 5px;
+   color: white;
+    text-decoration: none;
+    background: #f64c72;
+
+}
+
+
+.enregistrement__btns{
+    display: flex;
+    justify-content: start;
+    margin: 1px 1px;
+}
+
+.enregistrement__btns>a>input{
+    padding: 10px 35px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #0088a9;
+    font-size: 18px;
+    border-radius: 3px;
+    margin: 50px 7px;
+
+
+
+}
+
+
+
+/*enreg 3*/
+
+
+.information_reservation__ligne>select{
+    font-size: 15px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #101010;
+}
+
+
+
+
+/*enreg4*/
+.container_bagages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bagages__ligne{
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.bagage__element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+    padding: 20px 50px;
+}
+
+.bagage__photo>img{
+    width: 150px;
+}
+
+.bagage__quant{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.bagage__quant_btn {
+    cursor: pointer;
+    font-weight: bolder;
+    color: #f64c72;
+}
+
+.bagage__tarif{
+    font-size: 26px;
+    padding: 20PX;
+    display: flex;
+
+}
+
+.bagage__nv_tarrif{
+    padding: 0px 5px;
+}

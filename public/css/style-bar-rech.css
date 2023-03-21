@@ -1,0 +1,556 @@
+
+@font-face {
+    font-family: 'MontserratAlternates-Medium';
+    src: url('fonts/MontserratAlternates-Medium.eot?#iefix') format('embedded-opentype'),  url('fonts/MontserratAlternates-Medium.otf')  format('opentype'),
+         url('fonts/MontserratAlternates-Medium.woff') format('woff'), url('fonts/MontserratAlternates-Medium.ttf')  format('truetype'), url('fonts/MontserratAlternates-Medium.svg#MontserratAlternates-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+ body{
+        font-size: 14px;
+    }
+
+
+.jours_de_semaine{
+    display: flex;
+    justify-content: space-around;
+}
+.active{
+    color: blue;
+}
+.bar-recherche__suggession{
+    display: none;
+    width: 250px;
+    height: 200PX;
+    position: absolute;
+    top: 48px;
+    background: white;
+    z-index: 1;
+}
+.suggession__element{
+
+    width:100%;
+    height: 40px;
+
+
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.suggession__element:hover{
+
+background: #2a78cd;
+color: white;
+}
+
+.decore{
+   border-radius: 37px;
+    border: 1px solid;
+    width: 19px;
+    height: 19px;
+    line-height: 0.5;
+    text-align: center;
+    font-size: 27px;
+    background: #0088a9;
+    color: white;
+}
+
+
+
+
+
+
+
+.container-recherche{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  background: linear-gradient(180deg, #f6f6f6, #ffffff);
+    justify-content: center;
+  align-items: center;    
+  padding-bottom: 50px;
+}
+
+.bar-recherche__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    width: 950px;
+
+}
+.bar-recherche {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff9c;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 103px rgba(0,0,0,.33);
+    position: absolute;
+    top: -356px;
+    padding: 54px 70px;
+}
+.bar-recherche__titre{
+    padding-bottom: 27px;
+    padding-top: 0px;
+    font-size: 25px;
+    color: #3081d2;
+    font-weight: bolder;
+    line-height: 0;
+}
+
+.bar-recherche__destination{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 130px;
+}
+
+
+.bar-recherche__aler{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.bar-recherche__retour{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.aeroport__label{
+    position: absolute;
+    left: 5px;
+}
+.aeroport__label{
+    position: absolute;
+    left: 5px;
+}
+
+.bar-recherche__airplane{
+    position: absolute;
+    left:5px;
+
+    
+}
+
+
+
+.bar-recherche__aeroport{
+    width: 200px;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+
+}
+.bar-recherche__aeroport:focus{
+border-left: 4px solid #f64c72;
+width: 197px;
+
+}
+
+.bar-recherche__dates{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:244px;
+    position: relative;
+    height: 130px;
+}
+
+.bar-recherche__date{
+    background: white ;
+    width: 115px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.bar-recherche__date-contenue{
+    height: 26px;
+    font-size: 17px;
+}
+.bar-recherche__milieu{
+    font-weight: bolder;
+    color:#3081d2 ;
+    font-size: 30px;
+    line-height: .6;
+}
+.bar-recherche__milieu--plus{               
+
+}
+
+.bar-recherche__anuuler-retour{
+ 
+    position: absolute;
+    top:-5px;
+    right:-5px;
+    height: 20px;
+    width: 20px;    border-radius: 33px;
+    background: #f64c72;
+    display: none;
+    align-items: center;
+    justify-content: center
+
+}
+.bar-recherche__places{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid #c9c9c9;
+    background-color: white;
+    border-radius: 5px;
+    width: 190px;
+    height: 127px;
+    cursor: pointer;
+    font-size: 16px;
+    
+
+}
+
+.bar-recherche__titre-passager{
+    border-bottom: 1px solid #dddee0;
+    width: 100%;
+    text-align: center;
+    
+}
+.bar-recherche__affiche_passager{
+    padding: 0px 5px;
+    }
+
+    .bar-recherche__plus{
+        border-top: 1px solid #dddee0;
+        width: 100%;
+        text-align: center;
+        font-weight: bolder;
+        color: #3081d2;
+  
+        line-height: 1;
+        padding: 3px 0px;
+
+    }
+
+    .bar-recherche__icon{
+        padding-right: 5px;
+        margin-top: 3px;
+
+    }
+    .classe_affiche{
+        padding-left: 15px;
+    }
+.classe_affiche__btn-down{
+    position: absolute;
+    right: 20px;
+    margin-top: 3px;
+
+    
+}
+.bar-recherche__separator{
+    height: 100%;
+    width: 1px;
+    background: #c9c9c9;
+    position: absolute;
+    left: 73px;
+}
+
+.aeroport__erruer{
+    color: red;
+    position: absolute;
+    bottom: -20px;
+    width: 260Px;
+    height: 20px;
+    font-size: 13px;
+
+}
+.date__erruer{
+    color: red;
+    position: absolute;
+    bottom: -20px;
+    width: 244Px;
+    height: 20px;
+    font-size: 13px;
+
+}
+.places__erruer{
+    color: red;
+    position: absolute;
+    bottom: -20px;
+    width: 190Px;
+    height: 20px;
+    font-size: 13px;
+
+}
+.bar-recherche__recherche{
+    height: 128px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.bar-recherche_classe {
+    display: flex;
+    align-items: center;
+    background: white ;
+    padding: 7px;
+    height: 38px;
+    position: relative;
+   
+}
+
+.bar-recherche__button-recherche{
+    background: #f64c72;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    font-family: 'MontserratAlternates-Medium','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+
+.bar-recherche__list-choix-de-classe{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid;
+    text-align: center;
+   
+    background-color: white;
+
+    
+    width: 145px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius:5px;
+    cursor: pointer;
+    position: absolute;
+    top: 53px;
+    right: 0;
+}
+
+.bar-recherche__choix-classe{
+    
+    padding: 7px;
+    border-radius: 19px;
+
+}
+.bar-recherche__choix-classe:hover{
+    
+    color: #3081d2;
+    font-weight: bold;
+    transition: all 0.5s cubic-bezier(1, -0.02, 0, 1.03);
+    
+}
+
+.choisi{
+    background-color: #0088a9;
+}
+
+
+.container_passager{
+    display: none;
+    justify-content: center;
+    
+
+}
+.passagers_details{
+    padding: 28px 20px;
+}
+
+.ajouter_passager{
+    display: flex;
+    flex-direction: column;
+    
+    position: fixed;
+    z-index: 20;
+    top:130px;
+    border: #d1d4d5;
+    justify-content: space-between;
+    border-radius: 6px;
+    box-shadow: 1px 1px 9px #c1b6b6;
+  
+    background-color: white;
+  
+
+  
+}
+.adultes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 23px;
+    align-items: center;
+    padding: 8px 0px;
+    user-select: none;
+    
+}
+.informations, .operations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+.header_passager_text{
+    margin-bottom: 9px;
+    margin-left: 6px;
+}
+.aa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.passager_limite_age{
+    font-size: 11px;
+    width: 100%;
+    margin-top: -14px;
+}
+
+
+
+.affiche_passager:hover{
+    
+}
+.valider_passager, .valider_classe{
+    padding: 10px 0px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #3483d3;
+    cursor: pointer;
+    
+    background-color: #eee;
+    user-select: none;
+    
+}
+.header_passager{
+    font-size: 17px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0px;
+    background: #eeeeee;
+    
+}
+
+.adultes_adulte, .enfants_enfant, .bebes_bebe, .adultes_jn_adulte{
+display: flex;
+align-items: center;
+ height: 50px;
+ font-size: 20px;
+
+ width: 180px;
+
+}
+.number_of{
+display: flex;
+justify-content: center;
+align-items: center;
+
+font-size: 23px;
+color:#3081d2 ;
+padding: 0px 10px;
+
+}
+.plus_moins--plus{
+    background: url(../icons/inc.svg);
+
+}
+.plus_moins--moins{
+    background: url(../icons/dec.svg);
+}
+.plus_moins{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-size: cover;
+    margin: 0px 8px;
+}
+
+
+.recherche{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 194px;
+    height: 80px;
+
+}
+
+
+.button-place{
+    background: white;
+    width: 90px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+.button-place>p{
+    margin-left: 3px;
+    color: #776f6f;
+}
+
+
+
+.classe>p{
+    margin-left: 3px;
+
+}
+.classe>p>b{
+    margin-left: 10px;
+}
+
+
+.bordure{
+    border-radius: 5px;
+    border: 1px solid #c9c9c9;
+    cursor: pointer;
+    outline: none;
+}
+
+  
+
+@media only screen and (max-width: 600px) {
+    .ajouter_passager {
+        width: 95%;
+    }
+    .passagers_details {
+        padding: 0px 20px;
+    }
+    .adultes_adulte, .enfants_enfant, .bebes_bebe, .adultes_jn_adulte {
+     
+        width: 160px;
+    }
+    .bar-recherche {
+        top:0;
+        
+    }
+
+}
+  
+  
+
+
+
+
+
+
+
+
+
+
+

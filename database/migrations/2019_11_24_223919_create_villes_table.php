@@ -1,0 +1,40 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateVillesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('villes', function (Blueprint $table)
+         {
+            $table->bigIncrements('id_ville');
+            // $table->bigIncrements('code_postal_ville');
+            $table->string('nom_ville');
+            $table->string('pays_ville');
+           
+            
+            
+
+
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('villes');
+    }
+}
